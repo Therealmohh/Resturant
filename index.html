@@ -2,47 +2,270 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <title>Resturant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Moh's Resturant</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
-          <img
-            class="nav-img"
-            src="./images/restaurant-logo-design-template-c2119aff1d9a65251729cbc3510375e7_screen-removebg-preview 1.png"
-            alt=""
-          />
-
-          <ul class="nav-ul" id="nav-ul">
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>About Us</li>
-            <li><a href="#"></a>Menu</li>
-            <li><a href="#"></a>Reviews</li>
-            <li><a href="#"></a>Blog</li>
-            <li><a href="#"></a>Contact</li>
-            <li>
-              <button><a href="#"></a>Reserve</button>
-            </li>
-            <li>
-              <button class="icon"><i class="fa fa-bars"></i></button>
-            </li>
+      <!--------NAV START------>
+      <nav>
+        <div class="nav-container">
+          <div class="nav-img">
+            <img
+              src="./images/restaurant-logo-design-template-c2119aff1d9a65251729cbc3510375e7_screen-removebg-preview 1.png"
+              alt=""
+            />
+          </div>
+          <ul class="nav-items">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
-        </nav>
+        </div>
+        <div class="reserve-btn"><div class="reserve-txt">Reserve</div></div>
+        <div class="menu">
+          <button id="open-menu-btn"><i class="bx bx-menu"></i></button>
+          <button id="close-menu-btn"><i class="bx bx-x"></i></button>
+        </div>
+      </nav>
+      <!-- ============NAV END========= -->
+
+      <!-- =======START INTRO -->
+
+      <div class="intro">
+        <div class="intro-txt">
+          <div class="intro-h1">
+            <h1>
+              We serve the <br />
+              Taste you love
+            </h1>
+            <p id="intro-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit a urna, porttitor rhoncus dolor ent elementum
+              facilisis leo, veldolor purus non enim praesent.
+            </p>
+            <div class="intro-btn">
+              <button class="btn1">Explore</button>
+              <button class="btn2">
+                <img src="./images/charm_search.png" alt="" />Search
+              </button>
+            </div>
+          </div>
+          <div class="intro-img">
+            <img src="./images/image-removebg-preview (53) 1.png" alt="" />
+          </div>
+          <div class="intro-li">
+            <p>
+              <img
+                src="./images/image-removebg-preview (54) 1.png"
+                alt=""
+              />Dishes
+            </p>
+            <p>
+              <img
+                src="./images/image-removebg-preview (55) 1.png"
+                alt=""
+              />Desserts
+            </p>
+            <p>
+              <img
+                src="./images/image-removebg-preview (55) 2.png"
+                alt=""
+              />Drinks
+            </p>
+            <p>
+              <img
+                src="./images/image-removebg-preview (55) 3.png"
+                alt=""
+              />Snacks
+            </p>
+          </div>
+        </div>
       </div>
     </header>
+
+    <section>
+      <h2 id="head">Popular Dishes</h2>
+      <div class="popular_flex">
+        <div class="popular">
+          <img src="./images/image-removebg-preview (56) 1.png" alt="" />
+          <h3>Stir Fry Spaghetti</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ui porttitor
+            fderer
+          </p>
+          <div class="popular-btn">
+            <p>$27.92</p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+        <div class="popular">
+          <img src="./images/image 8.png" alt="" />
+          <h3>Jollof Rice</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ui porttitor
+            fderer
+          </p>
+          <div class="popular-btn">
+            <p>$27.92</p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+        <div class="popular">
+          <img src="./images/image 9.png" alt="" />
+          <h3>Pizza</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ui porttitor
+            fderer
+          </p>
+          <div class="popular-btn">
+            <p>$27.92</p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+
+        <div class="popular">
+          <img src="./images/image 10.png" alt="" />
+          <h3>Ramen</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ui porttitor
+            fderer
+          </p>
+          <div class="popular-btn">
+            <p>$27.92</p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="services">
+        <div class="service-img">
+          <img src="./images/image-removebg-preview (57) 2.png" alt="" />
+        </div>
+        <div class="service-txt">
+          <div class="service-h1">
+            <h1>We are more than <br />multiple services</h1>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit ui
+            porttitor fderer porttitor <br />consectetur adipiscing elit ui
+            porttitor <br />
+            fderer adipiscing adipiscing
+          </p>
+          <div class="service-txt2">
+            <p><img src="./images/image 8 (1).png" alt="" />Online Order</p>
+            <p><img src="./images/image 8 (1).png" alt="" />Reservation</p>
+            <p><img src="./images/image 8 (1).png" alt="" />Super Chefs</p>
+            <p><img src="./images/image 8 (1).png" alt="" />24/7 servies</p>
+            <p><img src="./images/image 8 (1).png" alt="" />Organised Food</p>
+          </div>
+          <div class="service-btn">
+            <button>About Us</button>
+          </div>
+        </div>
+      </div>
+      <div class="regular-menu">
+        <div class="menu2">
+          <div class="menu-h1"><h1>Our Regular Menu Pack</h1></div>
+          <div class="localities">
+            <div class="food">
+              <button>Mexican</button>
+              <button id="nigerian">Nigerian</button>
+              <button>Chinese</button>
+              <button>Korean</button>
+              <button>British</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular_flex">
+        <div class="popular">
+          <img src="./images/image-removebg-preview (56) 1.png" alt="" />
+          <h3>Stir Fry Spaghetti</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ui porttitor
+            fderer
+          </p>
+          <div class="popular-btn">
+            <p>$27.92</p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+        <div class="popular">
+          <img src="./images/image 8.png" alt="" />
+          <h3>Jollof Rice</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ui porttitor
+            fderer
+          </p>
+          <div class="popular-btn">
+            <p>$27.92</p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+        <div class="popular">
+          <img src="./images/image 11.png" alt="" />
+          <h3>Amala</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ui porttitor
+            fderer
+          </p>
+          <div class="popular-btn">
+            <p>$27.92</p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+
+        <div class="popular">
+          <img src="./images/image 12.png" alt="" />
+          <h3>Ofada Rice</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ui porttitor
+            fderer
+          </p>
+          <div class="popular-btn">
+            <p>$27.92</p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="booking">
+        <div class="booking-txt">
+          <h1>Do You Have Any Dinner Plan?</h1>
+          <h1>Reserve Your Table</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ui porttitor
+            fderer porttitor consectetur adipiscing elit ui porttitor fderer
+            adipiscing adipiscing
+          </p>
+          <button>Make a reservation</button>
+        </div>
+        <div class="booking-img">
+          <img src="./images/image-removebg-preview (53) 1.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
